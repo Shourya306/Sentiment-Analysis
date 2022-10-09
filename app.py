@@ -17,8 +17,6 @@ def sentiment_analysis(text):
     else:
          st.warning('Netural')
 
-st.write(sentiment_analysis(st.text_area('How was your day?')))
-
 txt = st.text_area('Text')
 if st.button('Analysize'):
     st.write(sentiment_analysis(txt))
